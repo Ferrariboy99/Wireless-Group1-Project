@@ -459,6 +459,8 @@ header {
 
 /*==================== ABOUT ====================*/
 
+
+
 .about__img {
   width: 200px;
   border-radius: 0.5rem;
@@ -494,6 +496,61 @@ header {
 }
 
 .about__buttons {
+  display: flex;
+  justify-content: center;
+}
+/*==================== ABOUT TEAM (NEW) ====================*/
+
+.about__team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.about__card {
+  flex: 1 1 300px;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.about__card:hover {
+  transform: translateY(-5px);
+}
+
+.about__name {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  text-align: center;
+}
+
+.about__role {
+  display: block;
+  text-align: center;
+  color: var(--text-color);
+  font-size: var(--smaller-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.about__card .about__description {
+  text-align: center;
+  margin-bottom: var(--mb-1-5);
+  font-size: var(--normal-font-size);
+}
+
+.about__card .about__info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-1-5);
+}
+
+.about__card .about__buttons {
   display: flex;
   justify-content: center;
 }
